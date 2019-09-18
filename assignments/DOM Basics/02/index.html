@@ -47,6 +47,34 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+      document.getElementById('demo').style.color = "purple"
+
+      function changeDemoColor() {
+        var democolor = document.getElementsByClassName('demo');
+        for (let i=0; i<democolor.length; i++){
+          democolor[i].style.color = "orange";
+        }
+      }
+      changeDemoColor()
+
+      function changeArticleColor() {
+        var articlecolor = document.getElementsByTagName('article');
+        for (let i=0; i<articlecolor.length; i++){
+          articlecolor[i].style.color = 'blue';
+        }
+      }
+      changeArticleColor()
+
+      document.body.querySelector("#demo-query").style.color = "grey";
+
+      function DemoQueryAllcolor() {
+      var demoqueryall = document.body.querySelectorAll(".demo-query-all");
+      for (i=0; i<demoqueryall.length; i++) {
+      demoqueryall[i].style.color = "green";
+      }
+      }
+      DemoQueryAllcolor()
+      
     </script>
   </body>
 </html>
